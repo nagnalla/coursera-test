@@ -10,6 +10,7 @@
       if(! $scope.inputvalues || 0 === $scope.inputValues){
         $scope.message = "Please Enter Data First !";
       }
+      else{
       var splits = $scope.inputvalues.split(",");
       if(splits.length ==0){
         $scope.message ="Can't be empty !";
@@ -19,6 +20,7 @@
       }else{
         $scope.message ="Too Much !";
       }
+    }
     }
   }
 
